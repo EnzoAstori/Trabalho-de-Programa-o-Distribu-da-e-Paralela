@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package main;
+
+message result {
+    int32 num = 1;
+}
+
+message args {
+    int32 numOne = 1;
+    int32 numTwo = 2;
+}
+
+service api {
+    rpc add (args) returns (result);
+    rpc sub (args) returns (result);
+    rpc mul (args) returns (result);
+    rpc div (args) returns (result);
+}

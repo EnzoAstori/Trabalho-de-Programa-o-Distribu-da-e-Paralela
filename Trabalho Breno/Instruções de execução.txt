@@ -1,0 +1,18 @@
+INSTRUÇÕES DE COMANDOS NO CMD.
+
+
+cd {endereço da pasta da calculadora}
+pip install -r requirements.txt
+python grpcCalc_server.py
+python grpcCalc_client.py
+
+cd {endereço da pasta do Minerador}
+pip install -r requirements.txt
+python mine_server.py
+python mine_client.py
+
+
+**Usamos o Comando: python -m grpc_tools.protoc --proto_path=. --python_out=. --grpc_python_out=. mine_grpc.proto
+ Para gerar os arquivos: mine_grpc_pb2.py // mine_grpc_pb2_grpc.py 
+
+*** A pasta que enviamos os arquivos "pb2" já estão gerados (explicando apenas a origem).
